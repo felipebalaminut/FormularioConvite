@@ -1,0 +1,68 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /* colors */
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2D3136;
+  --shape-hover: #383D42;
+
+  --input-base: #1C1F21;
+  --input-stroke: #363B40;
+  --input-placeholder: #869198;
+
+  --text-body: #C8CDD0;
+  --text-heading: #f9f9f9;
+
+  --brand-light: #59B2FF;
+  --color-warning: #FF5959;
+
+  /* fonts */
+  --ff-sans: "Open Sans", system-ui;
+  --ff-baloo: "Baloo 2", system-ui;
+  --ff-leckerli: "Leckerli One", system-ui;
+
+}
+
+html {
+  font: 400 1rem var(--ff-sans);
+  color: var(--text-heading);
+}
+
+body {
+  background-color: var(--shape-background);
+}
+
+h1 {
+  font-family: var(--ff-leckerli);
+  font-size: 2.5rem;
+  color: #FF598B;
+}
+
+h2 {
+  font-family: var(--ff-baloo);
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
