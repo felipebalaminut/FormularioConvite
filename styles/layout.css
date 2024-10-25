@@ -1,3 +1,56 @@
 #app {
+  overflow: hidden;
   display: grid;
+  grid-template-columns: 32.8125% 67.1875%;
+  margin: 0 auto;
+
+  width: 1280px;
+  height: 100vh;
+}
+
+aside {
+  padding: 1.25rem 0 1.25rem 1.25rem;
+
+  & .aside-container {
+    
+    position: relative;
+    & .banner-logo {
+      position: absolute;
+      inset: 2rem 2rem 0 2rem;
+
+      & img {
+        width: 3rem;
+        height: 3rem;
+      }
+
+      & h1 {
+        margin-block: 1rem .25rem;
+      }
+    }
+
+    & img {
+      width: 400px;
+      height: 708px;
+      border-radius: .75rem;
+    }
+  }
+}
+
+main {
+  overflow: auto;
+  padding: 1.25rem;
+
+  scrollbar-width: 0;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & .main-container {
+    background-color: var(--shape-body);
+    border-radius: 0.75rem;
+
+    height: 1300px; /* Tirar */
+
+    padding: 5rem 8.125rem;
+  }
 }

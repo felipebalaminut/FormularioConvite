@@ -43,6 +43,7 @@ html {
 }
 
 body {
+  overflow: hidden;
   background-color: var(--shape-background);
 }
 
@@ -54,6 +55,7 @@ h1 {
 
 h2 {
   font-family: var(--ff-baloo);
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
@@ -64,5 +66,10 @@ h3 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
