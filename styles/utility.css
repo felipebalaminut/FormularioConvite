@@ -2,6 +2,14 @@
   display: flex;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
+.gap-16 {
+  gap: 1rem;
+}
+
 .grid {
   display: grid;
 }

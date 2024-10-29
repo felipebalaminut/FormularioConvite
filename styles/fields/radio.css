@@ -1,0 +1,45 @@
+.radio-wrapper {
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+
+  padding: 0.25rem;
+}
+
+.radio-inner {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.55rem 1rem;
+  border-radius: 0.25rem;
+  width: 130px;
+
+  position: relative;
+  & input {
+    all: unset;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    inset: 0;
+  }
+
+  &:focus-within {
+    background-color: var(--shape-button);
+    border-radius: 0.25rem;
+
+    & label {
+      font-weight: 600;
+    }
+
+    & svg path {
+      stroke: var(--brand-light);
+    }
+  }
+}
