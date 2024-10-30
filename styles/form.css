@@ -1,14 +1,15 @@
 @import url(fields/index.css);
 
-form {
-  margin-top: 2.5rem;
-}
 
 fieldset {
   border: 0;
 
   display: grid;
   gap: 1rem;
+}
+
+fieldset + fieldset {
+  margin-top: 3rem;
 }
 
 legend {

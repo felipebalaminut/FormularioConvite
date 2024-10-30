@@ -52,5 +52,9 @@ main {
     height: 1300px; /* Tirar */
 
     padding: 5rem 8.125rem;
+
+    & h2 {
+      margin-bottom: 3rem;
+    }
   }
 }

@@ -12,6 +12,10 @@ textarea {
   color: var(--input-placeholder);
 }
 
+textarea {
+  resize: vertical;
+}
+
 input[type="date"] {
   &::-webkit-calendar-picker-indicator {
     display: none;
@@ -24,7 +28,8 @@ label {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+.radio-wrapper:focus-within {
   outline: 1px solid var(--brand-light);
 }
 
