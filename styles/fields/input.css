@@ -37,3 +37,10 @@ textarea:focus,
   display: block;
   margin-bottom: 0.75rem;
 }
+
+input, textarea {
+
+  &:valid + .error {
+    display: none;
+  }
+}

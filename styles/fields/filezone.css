@@ -26,7 +26,11 @@
   }
 
   label:hover {
-    background-color: var(--shape-hover);
+    background-color: var(--brand-light);
+
+    & svg path {
+      fill: white;
+    }
   }
 
   & span {
