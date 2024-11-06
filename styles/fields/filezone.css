@@ -1,0 +1,36 @@
+.file-zone {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+
+  height: 3rem;
+
+  & input[type="file"] {
+    display: none;
+  }
+
+  label {
+    font: 600 0.875 var(--ff-sans);
+    color: var(--text-heading);
+
+    background-color: var(--shape-button);
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  label:hover {
+    background-color: var(--shape-hover);
+  }
+
+  & span {
+    color: var(--input-placeholder);
+    font: 400 1rem var(--ff-sans);
+  }
+}

@@ -360,7 +360,7 @@
                       src="assets/images/radio-11.png"
                       alt="presentes de natal"
                     />
-                    <label for="christmas-theme">Natak</label>
+                    <label for="christmas-theme">Natal</label>
                     <input
                       type="radio"
                       id="christmas-theme"
@@ -383,7 +383,7 @@
                 <div class="input-wrapper flex-1">
                   <label>Estilo</label>
                   <div class="checkbox-wrapper-switch">
-                    <input type="checkbox" id="check" name="toggle-mode">
+                    <input type="checkbox" id="check" name="toggle-mode" />
                     <label for="check" class="button"></label>
                     <div class="toggle-labels">
                       <span class="dark">Escuro</span>
@@ -394,7 +394,14 @@
 
                 <div class="input-wrapper flex-2">
                   <label>Foto de capa</label>
-                  <div class="file-zone"></div>
+                  <div class="file-zone">
+                    <input type="file" id="file-input" for="cover-file" />
+                    <label for="file-input" class="custom-file-label">
+                      <img src="assets/icons/upload.svg" alt="upload-icon" />
+                      Selecionar
+                    </label>
+                    <span>Nenhum arquivo selecionado</span>
+                  </div>
                 </div>
               </div>
             </fieldset>

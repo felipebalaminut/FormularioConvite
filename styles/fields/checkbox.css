@@ -3,6 +3,8 @@
   align-items: center;
   gap: 0.75rem;
 
+  height: 3rem;
+
   & input {
     position: absolute;
     left: -9999px;
