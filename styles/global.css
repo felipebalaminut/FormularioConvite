@@ -67,14 +67,3 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-.error {
-  display: flex;
-  gap: .5rem;
-  align-items: center;
-
-  & span {
-    font: 400 .75rem var(--ff-sans);
-    color: var(--color-warning);
-  }
-}

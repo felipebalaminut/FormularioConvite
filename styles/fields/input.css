@@ -16,7 +16,8 @@ textarea {
   resize: vertical;
 }
 
-input[type="date"] {
+input[type="date"],
+input[type="time"] {
   &::-webkit-calendar-picker-indicator {
     display: none;
   }
@@ -40,7 +41,25 @@ textarea:focus,
 
 input, textarea {
 
+  &:focus:invalid {
+    outline: none;
+    border: 0.095rem solid var(--color-warning);
+  }
+
   &:valid + .error {
     display: none;
+  }
+}
+
+.error {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+
+  margin-top: .5rem;
+
+  & span {
+    font: 400 .75rem var(--ff-sans);
+    color: var(--color-warning);
   }
 }
