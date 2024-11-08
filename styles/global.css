@@ -67,3 +67,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.line {
+  margin-block: 3rem 2.5rem;
+
+  border-top: 1px solid var(--input-stroke);
+}

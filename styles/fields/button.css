@@ -1,0 +1,29 @@
+.actions-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-primary {
+  background-color: var(--brand-light);
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem 1.25rem;
+
+  color: var(--text-heading);
+  font-weight: 600;
+
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+  justify-content: center;
+  
+  transition: 0.3s;
+  &:hover {
+    background-color: #218eed;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 1px solid var(--brand-light);
+  }
+}

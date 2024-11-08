@@ -444,25 +444,69 @@
                 />
 
                 <div class="error">
-                  <img src="assets/icons/alert-circle.svg" alt="círculo vermelho de alerta">
+                  <img
+                    src="assets/icons/alert-circle.svg"
+                    alt="círculo vermelho de alerta"
+                  />
                   <span>Campo obrigatório</span>
                 </div>
               </div>
 
               <div class="flex gap-16">
                 <div class="input-wrapper flex-1">
-                  <label for="">E-mail</label>
-                  <input type="email" placeholder="exemplo@email.com">
+                  <label for="email-contact">E-mail</label>
+                  <input
+                    type="email"
+                    id="email-contact"
+                    name="email-contact"
+                    placeholder="exemplo@email.com"
+                  />
                 </div>
                 <div class="input-wrapper flex-1">
-                  <label for="">Telefone</label>
-                  <input type="tel" placeholder="(99) 99999-9999">
+                  <label for="phone-contact">Telefone</label>
+                  <input
+                    type="tel"
+                    id="phone-contact"
+                    name="phone-contact"
+                    placeholder="(99) 99999-9999"
+                  />
                 </div>
               </div>
             </fieldset>
 
+            <div class="line"></div>
+
             <footer>
-              
+              <div class="terms-wrapper checkbox-wrapper input-wrapper">
+                <div class="checkbox-image"></div>
+                <input type="checkbox" id="terms" name="terms" />
+                <label for="terms"
+                  >Li e concordo com os
+                  <a href=""><strong>Termos e Condições</strong></a> e com a
+                  <a href=""><strong>Política de Privacidade</strong></a>
+                </label>
+              </div>
+              <div class="terms-wrapper checkbox-wrapper input-wrapper">
+                <div class="checkbox-image"></div>
+                <input type="checkbox" id="email-promo" name="email-promo" />
+                <label for="email-promo"
+                  >Aceito receber atualizações e promoções por e-mail</label
+                >
+              </div>
+              <div class="terms-wrapper checkbox-wrapper input-wrapper">
+                <div class="checkbox-image"></div>
+                <input type="checkbox" id="sms-promo" name="sms-promo" />
+                <label for="sms-promo"
+                  >Aceito receber atualizações e promoções por SMS
+                </label>
+              </div>
+
+              <div class="actions-wrapper">
+                <button class="btn-primary" type="submit">
+                  <img src="assets/icons/ticket.svg" alt="icone de ticket">
+                  Gerar convite
+                </button>
+              </div>
             </footer>
           </form>
         </div>
